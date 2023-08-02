@@ -4,7 +4,6 @@ var speed = 150;
 
 // typeWriter function - prints "Hello, World!"
 function typeWriter() {
-    document.getElementById("typehello").innerHTML = "The requested resource was not found on this server."
     setTimeout(typeWriter, 450)
     document.getElementById("typehello").innerHTML = ""
     setTimeout(typeWriter, 450)

@@ -1,3 +1,7 @@
+var i = 0;
+var txt = "Hello, World!";
+var speed = 150;
+
 // Intro sequence for page load
 function introSequence() {
     document.getElementById("typehello").innerHTML = "";
@@ -6,13 +10,9 @@ function introSequence() {
 
 // Typewriter function to print "Hello, World!"
 function typeWriter() {
-    var i = 0;
-    var txt = "Hello, World!";
-    var speed = 150;
     if (i < txt.length) {
         document.getElementById("typehello").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(introSequence, speed);
+        setTimeout(typeWriter, speed);
     }
 }
 

@@ -5,7 +5,7 @@ var speed = 150;
 // Intro sequence for page load
 function introSequence() {
     document.getElementById("typehello").innerHTML = "";
-    setTimeout(typeWriter, 450);
+    setTimeout(typeWriter, 999);
 }
 
 // Typewriter function to print "Hello, World!"

@@ -12,6 +12,7 @@ function introSequence() {
 function typeWriter() {
     if (i < txt.length) {
         document.getElementById("typehello").innerHTML += txt.charAt(i);
+        i++;
         setTimeout(typeWriter, speed);
     }
 }

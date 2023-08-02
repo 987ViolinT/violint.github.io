@@ -1,12 +1,12 @@
 var i = 0;
-var txt = "Hello, World!"
+var txt = "Hello, World!";
 var speed = 150;
 
 // typeWriter function - prints "Hello, World!"
 function typeWriter() {
-    setTimeout(typeWriter, 450)
-    document.getElementById("typehello").innerHTML = ""
-    setTimeout(typeWriter, 450)
+    setTimeout(typeWriter, 450);
+    document.getElementById("typehello").innerHTML = "";
+    setTimeout(typeWriter, 450);
     if (i < txt.length) {
         document.getElementById("typehello").innerHTML += txt.charAt(i);
         i++;

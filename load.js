@@ -2,6 +2,7 @@ var i = 0;
 var txt = "Hello, World!"
 var speed = 50;
 
+// typeWriter function - prints "Hello, World!"
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("typehello").innerHTML += txt.charAt(i);
@@ -9,3 +10,8 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+// Load typeWriter function on page start
+window.addEventListener("load", function() {
+    typeWriter();
+});

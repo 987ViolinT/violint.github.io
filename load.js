@@ -1,11 +1,11 @@
 var i = 0;
 var txt = "Hello, World!";
-var speed = 150;
+var speed = 250;
 
 // Intro sequence for page load
 function introSequence() {
     document.getElementById("typehello").innerHTML = "";
-    setTimeout(typeWriter, 999);
+    setTimeout(typeWriter, 250);
 }
 
 // Typewriter function to print "Hello, World!"
@@ -19,5 +19,5 @@ function typeWriter() {
 
 // Load introSequence function on page start
 window.addEventListener("load", function() {
-    this.setTimeout(introSequence, 450);
+    this.setTimeout(introSequence, 2500);
 });

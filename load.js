@@ -1,6 +1,6 @@
 var i = 0;
 var txt = "Hello, World!";
-var speed = 250;
+var speed = 150;
 
 // Intro sequence for page load
 function introSequence() {
